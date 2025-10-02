@@ -126,30 +126,6 @@ REACT_APP_GEMINI_MODEL="gemini-2.0-flash-exp"
    - Review individual answers for detailed evaluation
    - Check AI summary for overall performance
 
-## 🏗️ Project Structure
-
-```
-Ai-interview/
-├── public/
-│   ├── index.html
-│   └── ...
-├── src/
-│   ├── components/
-│   │   ├── IntervieweeChat.js       # Main interview interface
-│   │   ├── IntervieweeChat.css      # Interview styling
-│   │   ├── InterviewerDashboard.js  # Dashboard component
-│   │   ├── InterviewerDashboard.css # Dashboard styling
-│   │   ├── WelcomeBackModal.js      # Resume modal
-│   │   └── WelcomeBackModal.css     # Modal styling
-│   ├── App.js                        # Main app with tab navigation
-│   ├── App.css                       # App-level styling
-│   ├── index.js                      # React entry point
-│   └── index.css                     # Global styles
-├── package.json
-├── README.md
-└── ...
-```
-
 ## 🎨 Key Components
 
 ### IntervieweeChat.js
