@@ -47,7 +47,7 @@ Before you begin, ensure you have the following installed:
 
 1. **Navigate to the project directory:**
    ```bash
-   cd Ai-interview
+   cd HireSense
    ```
 
 2. **Install dependencies:**
