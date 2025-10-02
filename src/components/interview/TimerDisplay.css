@@ -1,0 +1,78 @@
+/* Timer Display Styles */
+.timer-display {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 25px;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timer-display .timer-icon {
+  font-size: 1.3rem;
+  animation: pulse 2s infinite;
+}
+
+.timer-display .timer-value {
+  min-width: 60px;
+  text-align: center;
+}
+
+.timer-display.critical {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  animation: shake 0.5s infinite;
+  box-shadow: 0 4px 12px rgba(245, 87, 108, 0.5);
+}
+
+.timer-display.critical .timer-icon {
+  animation: pulse 0.5s infinite;
+}
+
+.timer-display.paused {
+  background: #888;
+  opacity: 0.7;
+}
+
+.timer-display .timer-status {
+  font-size: 0.85rem;
+  margin-left: 8px;
+  opacity: 0.9;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-3px);
+  }
+  75% {
+    transform: translateX(3px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timer-display {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .timer-display .timer-icon {
+    font-size: 1.1rem;
+  }
+}

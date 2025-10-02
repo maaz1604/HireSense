@@ -1,0 +1,77 @@
+.interviewer-dashboard {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard-header {
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Controls Row */
+.controls-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+/* Candidates List */
+.candidates-list {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .interviewer-dashboard {
+    padding: 15px;
+  }
+
+  .dashboard-header {
+    padding: 25px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .controls-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .controls-row > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .interviewer-dashboard {
+    padding: 10px;
+  }
+
+  .dashboard-header {
+    padding: 20px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 1.4rem;
+  }
+}

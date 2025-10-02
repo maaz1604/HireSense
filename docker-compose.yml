@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  hiresense:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hiresense-app
+    ports:
+      - "3000:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    # Mount .env file for API keys (optional)
+    # env_file:
+    #   - .env
